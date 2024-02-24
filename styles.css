@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/*main container*/
+.main-content {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.background-img {
+    width: 100%;
+    height: 100vh;
+    background: rgb(25, 31, 52, 0.8);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.5rem;
+    background: rgb(77, 81, 97);
+    z-index: 100;
+    
+}
+
+.max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4.5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    position: relative;
+}
+
+.logo::after {
+    content: '';
+    width: 4rem;
+    height: 0.2rem;
+    border-radius: 0.2rem;
+    background: #f9004d;
+    position: absolute;
+    bottom: -0.7rem;
+    left: 2rem;
+    transform: translateX(-50%);
+}
+
+span{
+    color: #f9004d;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 2.5rem;
+    position: relative;
+}
+
+.menu li a::after {
+    content: '';
+    width: 0;
+    height: 0.2rem;
+    background: #f9004d;
+    position: absolute;
+    bottom: -0.7rem;
+    left: 0;
+    transition: 0.5s;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+/*Main content*/
+.main {
+    position: absolute;
+    left: 5rem;
+    top: 15rem;
+}
+
+.content {
+    width: 60%;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hire {
+    width: 250px;
+    height: 40px;
+    background: rgb(25, 31, 52, 0.9);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 0.8rem;
+    text-align: center;
+    box-shadow: 0 0 1rem #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hire:hover {
+    background: #f9004d;
+    color: darkslateblue;
+    box-shadow: none;
+    transform: scale(1.1);
+}
+
+/*Main Content*/
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(25, 31, 52);
+}
+
+.about-me {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5rem;
+}
+
+.image {
+    width: 40%;
+    height: 70vh;
+    background: #fff;
+    margin-top: 6rem;   
+}
+
+.image img {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: coverx;
+}
+
+.about-text {
+    width: 80%;
+    height: 60vh;
+    color: #fff;
+    margin-left: 6rem; 
+    margin-top: 2rem; 
+}
+
+.about-text h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0.8rem;
+}
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9004d;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.button .talk {
+    width: 150px;
+    height: 30px;
+    background: rgb(25, 31, 52, 0.9);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    padding-top: 0.5rem;
+    box-shadow: 0 0 1rem #fff;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button .talk:hover {
+    background: #f9004d;
+    color: darkslateblue;
+    box-shadow: none;
+    transform: scale(1.1);
+}
+
+/*Services*/
+.services {
+    width: 100%;
+    height: 100vh;
+    background: #043959;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 4rem;
+}
+
+.service-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.service-card {
+    width: 18rem;
+    height: 20rem;
+    color: #fff;
+    background: #043959;
+    box-shadow: 5px 10px 18px #50575e;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #f9004d;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.service-card h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.service-card p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
